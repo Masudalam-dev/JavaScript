@@ -9,3 +9,15 @@ alert(`Your dog is ${humanAge} years old in human age.`);
 catAge = prompt("Enter your Cat age!");
 humanAge = (catAge - 2)* 4 + 24
 alert(`Your cat is ${humanAge} years old in human.`);
+
+
+// Increment and decrement
+// post-increment and pre-increment and vice versa for decrement
+var x = 3;
+var y = x++;
+y += 1;
+// The value of Y will be 4 not 5 because x return original value first then increment(post-increment) 
+// aber es wird den Undershied, pre-increment zu benutzen.
+var x = 3;
+var y = ++x;
+y += 1;
