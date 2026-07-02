@@ -9,3 +9,14 @@ function calculateAgeLeft(age) {
 }
 
 calculateAgeLeft(23);
+
+// To calculate Body Mass Index 
+function bmiCalculator(weight,height) {
+
+    const bmi = weight / Math.pow(height,2);
+    const roundTheNumber = Math.floor(bmi);
+    return roundTheNumber;
+}
+
+const bmi = bmiCalculator(65,1.8);
+console.log(bmi);
