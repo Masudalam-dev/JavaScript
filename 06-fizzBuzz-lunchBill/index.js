@@ -71,5 +71,25 @@ fizzBuzz();
 
 
 // While loop questions 
+let num = 100;
 
+function juiceBottles() {
 
+    while(num >= 1) {
+
+        console.log(`${num} bottles of juice on the wall, ${num} bottles of juice.`);
+
+        console.log(`Put one down and pass it around. ${num-1} bottles of juice.`);
+
+        num--;
+    }
+}
+
+juiceBottles();
+
+// Method second
+let num = 100;
+while (num >= 1) {
+    const bottles = "bottles";
+    return ``
+} 
