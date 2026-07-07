@@ -90,6 +90,29 @@ juiceBottles();
 // Method second
 let num = 100;
 while (num >= 1) {
-    const bottles = "bottles";
-    return ``
+
+    if (num === 1) {
+        console.log(`${num} bottle of juice on the shelf, ${num} bottle of juice.`)
+        console.log(`Pick one down and pass it around, ${num-1} bottle of juice.`)
+    }
+    else {
+        console.log(`${num} bottles of juice on the shelf, ${num} bottles of juice.`)
+        console.log(`Pick one down and pass it around, ${num -1} bottles of juice.`)
+    }
+
+    num--;
 } 
+
+// Avoid repetation 
+let num = 100;
+
+while (num >=  1) {
+   
+    let currentBottle = num === 1 ? "bottle" : "bottles";
+    let nextBottle = (num-1) === 1 ? "bottle": "bottles";
+
+    console.log(`${num} ${currentBottle} on the wall, ${num} ${currentBottle} juice.`);
+    console.log(`Pick one down and pass it around, ${num-1} ${nextBottle} of juice.`);
+
+    num--;
+}
