@@ -45,3 +45,20 @@ function analyzeWord(str) {
 }
 
 console.log(analyzeWord("Masud Alam"))
+
+
+// Solving the same problem without using for loops
+function anayzeWordFunction(str) {
+
+    const vowels = "aeiou".split('');
+    const consonants = "bcdfghjklmnpqrstvwxyz".split('');
+    const input = str.toLowerCase().split('');
+
+    const onlyVowels = input.filter(char => vowels.includes(char));
+    const onlyConsonants = input.filter(char => consonants.includes(char));
+
+    console.log(`Vowels: ${onlyVowels} and consonants: ${onlyConsonants}`);
+    
+}
+
+anayzeWordFunction("Masud")
