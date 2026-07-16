@@ -19,3 +19,29 @@ function analyzeWord(str) {
 }
 
 analyzeWord("Masud Alam");
+
+
+// to get the value as characters
+function analyzeWord(str) {
+    const vowels = ["a", "e", "i", "o", "u"]
+    const consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
+
+    const input = str.toLowerCase();
+    let vowelLetters = "";
+    let consonantLetters = "";
+
+    for (const char of input) {
+
+        if (vowels.includes(char)) {
+            vowelLetters += char;
+        }
+        else if (consonants.includes(char)) {
+            consonantLetters += char;
+        }
+    }
+    
+    return `Vowels: ${vowelLetters}, Consonants: ${consonantLetters}`
+    
+}
+
+console.log(analyzeWord("Masud Alam"))
