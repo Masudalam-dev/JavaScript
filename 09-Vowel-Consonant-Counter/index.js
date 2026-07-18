@@ -54,6 +54,7 @@ function anayzeWordFunction(str) {
     const consonants = "bcdfghjklmnpqrstvwxyz".split('');
     const input = str.toLowerCase().split('');
 
+    // Here .filter() works as loop 
     const onlyVowels = input.filter(char => vowels.includes(char));
     const onlyConsonants = input.filter(char => consonants.includes(char));
 
