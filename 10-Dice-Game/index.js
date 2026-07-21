@@ -1,3 +1,5 @@
+const btn = document.getElementById("button");
+
 function diceGame() {
 
     // Two Different Random Number Generator
@@ -37,5 +39,10 @@ function diceGame() {
         winnerText.style.color = "green";
     }
 
+    // toggle 👉 run skip and run
+    dice1Img.classList.toggle("rotate");
+    dice2Img.classList.toggle("rotate");
+
 }
-diceGame();
+
+btn.addEventListener("click", diceGame)
