@@ -1,29 +1,35 @@
+:root {
+    --main-color: green;
+    --bg-color: rgb(29, 24, 86);
+    --main-font: "Audiowide", "Sofia", "San Serif";
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body {
+html,body {
     background-color: rgb(29, 28, 51);
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Audiowide", "Sofia", sans-serif;
+    font-family: var(--main-font);
 }
 
 .hero {
-    max-width: 60%;
-    min-height: 80vh;
-    background-color: rgb(29, 24, 86);
+    width: 70%;
+    background-color: var(--bg-color);
     border-radius: 20px;
     box-shadow: 5px 5px 10px blue inset;
-    padding: 50px;
     text-align: center;
+    padding: 50px;
 }
 
-.l-container {
+.hero .l-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,9 +37,7 @@ body {
 }
 
 .winner {
-    width: 100%;
     font-size: 4rem;
-    color: green;
     text-shadow: 2px 2px 5px blue;
 }
 
@@ -44,4 +48,31 @@ img {
 h2 {
     color: grey;
     margin-bottom: 10px;
+}
+
+.container-button {
+    padding: 50px;
+}
+
+.container-button > .l-container {
+    padding: 2px;
+    background: linear-gradient(115deg, violet, indigo, blue, green, yellow, orange, red); 
+
+}
+
+.container-button > .l-container:active {
+    background: linear-gradient(230deg, violet, indigo, blue, green, yellow, orange, red); 
+}
+.btn {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    background-color: var(--bg-color);
+    color: rgb(232, 225, 225);
+    
+}
+
+
+.btn:active {
+    color: var(--main-color);
 }
