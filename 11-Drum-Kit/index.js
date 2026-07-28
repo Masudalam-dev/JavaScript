@@ -1,16 +1,12 @@
 const button = document.getElementById("button");
-button.addEventListener("click", function() {
-    alert("Please Click on the Letters!")
+button.addEventListener("click", () => {
+    alert("Please click on the Letters!")
 })
 
-let boxNumber = document.getElementsByClassName("box");
-
-for (let i = 0; i < boxNumber.length; i++) {
-    boxNumber[i].addEventListener("click", gotClicked);
-
+let boxSound = document.getElementsByClassName("box");
+   
+for (let i = 0; i < boxSound.length; i++) {
+    boxSound[i].addEventListener("click", function () {
+       this.style.color = "gold";
+    })
 }
-
-function gotClicked() {
-    alert("I got clicked!")
-}
-    
