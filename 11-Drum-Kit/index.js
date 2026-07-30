@@ -10,3 +10,4 @@ for (let i = 0; i < boxSound.length; i++) {
        this.style.color = "gold";
     })
 }
+
