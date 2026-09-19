@@ -13,3 +13,14 @@ function calculator(num1, num2, operator) {
 calculator(4, 10, multiply);
 
 
+// Higher Oder can be created in two ways
+function a(anthing) {
+    return anthing;
+}
+
+function b() {
+    const name = "Masud Alam";
+    console.log(name);
+}
+
+a(b);

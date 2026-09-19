@@ -3,11 +3,13 @@
     --main-font: Serif, 'Roboto', 'Poppins';
     --main-color: snow;
 }
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
+
 html, body {
     background-color: var(--bg-color);
     color: var(--main-color);
@@ -64,7 +66,7 @@ div p::first-letter {
 }
 
 .box:active {
-    color: red;
+    color: green;
     transform: scale(1.2);
 }
 
@@ -87,4 +89,9 @@ div p::first-letter {
 
 .btn:active {
     transform: scale(1.05);
+}
+
+.pressed {
+    box-shadow: 2px 2px 2px grey;
+    color: red;
 }
