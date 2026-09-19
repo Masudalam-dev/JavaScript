@@ -6,19 +6,17 @@ const characterRemain = 280 - characterCount;
 alert(`You have written ${characterCount} characters. You have ${characterRemain} characters remain.`)
 
 // Slicing the tweet 
-const tweet = prompt("Compose your tweet here!")
-tweetUnder280 = tweet.slice(0,280);
-alert(tweetUnder280);
+const message = prompt("Compose your tweet here!")
+const messageUnder280 = message.slice(0,280);
+alert(messageUnder280);
 
 // In one line 
 alert(prompt("Compose your tweet!").slice(0,280));
 
 // Capitalize the first letter
-const name = prompt("Enter your name!");
-sliceFirstChar = name.slice(0,1);
-capitalFirstChar = sliceFirstChar.toUpperCase();
-smallRestChar = name.slice(1,length.name).toLowerCase();
-orderedName = capitalFirstChar + smallRestChar;
+const fullName = prompt("Enter your name!");
+const sliceFirstChar = fullName.slice(0,1);
+const capitalFirstChar = sliceFirstChar.toUpperCase();
+const smallRestChar = fullName.slice(1, fullName.length).toLowerCase();
+const orderedName = capitalFirstChar + smallRestChar;
 alert("Hello, " + orderedName);
-
-
