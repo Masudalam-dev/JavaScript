@@ -71,48 +71,48 @@ fizzBuzz();
 
 
 // While loop questions 
-let num = 100;
+let number = 100;
 
 function juiceBottles() {
 
-    while(num >= 1) {
+    while(number >= 1) {
 
-        console.log(`${num} bottles of juice on the wall, ${num} bottles of juice.`);
+        console.log(`${number} bottles of juice on the wall, ${number} bottles of juice.`);
 
-        console.log(`Put one down and pass it around. ${num-1} bottles of juice.`);
+        console.log(`Put one down and pass it around. ${number-1} bottles of juice.`);
 
-        num--;
+        number--;
     }
 }
 
 juiceBottles();
 
 // Method second
-let num = 100;
-while (num >= 1) {
+let n = 100;
+while (n >= 1) {
 
-    if (num === 1) {
-        console.log(`${num} bottle of juice on the shelf, ${num} bottle of juice.`)
-        console.log(`Pick one down and pass it around, ${num-1} bottle of juice.`)
+    if (n === 1) {
+        console.log(`${n} bottle of juice on the shelf, ${n} bottle of juice.`)
+        console.log(`Pick one down and pass it around, ${n-1} bottle of juice.`)
     }
     else {
-        console.log(`${num} bottles of juice on the shelf, ${num} bottles of juice.`)
-        console.log(`Pick one down and pass it around, ${num -1} bottles of juice.`)
+        console.log(`${n} bottles of juice on the shelf, ${n} bottles of juice.`)
+        console.log(`Pick one down and pass it around, ${n -1} bottles of juice.`)
     }
 
-    num--;
+    n--;
 } 
 
 // Avoid repetation 
-let num = 100;
+let counter = 100;
 
-while (num >=  1) {
+while (counter >=  1) {
    
-    let currentBottle = num === 1 ? "bottle" : "bottles";
-    let nextBottle = (num-1) === 1 ? "bottle": "bottles";
+    let currentBottle = counter === 1 ? "bottle" : "bottles";
+    let nextBottle = (counter-1) === 1 ? "bottle": "bottles";
 
-    console.log(`${num} ${currentBottle} on the wall, ${num} ${currentBottle} juice.`);
-    console.log(`Pick one down and pass it around, ${num-1} ${nextBottle} of juice.`);
+    console.log(`${counter} ${currentBottle} on the wall, ${counter} ${currentBottle} juice.`);
+    console.log(`Pick one down and pass it around, ${counter-1} ${nextBottle} of juice.`);
 
-    num--;
+    counter--;
 }
