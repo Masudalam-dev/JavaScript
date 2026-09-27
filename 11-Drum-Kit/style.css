@@ -87,11 +87,7 @@ div p::first-letter {
     font-family: var(--main-font);
 }
 
-.btn:active {
-    transform: scale(1.05);
-}
-
 .pressed {
-    box-shadow: 2px 2px 2px grey;
     color: red;
+    transform: scale(1.1);
 }
